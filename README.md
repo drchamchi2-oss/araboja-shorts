@@ -62,11 +62,9 @@ Run the local checks before opening a pull request:
 ```bash
 python -m py_compile main_gpt.py scripts/doctor.py
 python -m pytest
-python -m bandit -r main_gpt.py scripts -x tests -ll -s B324
+python -m bandit -r main_gpt.py scripts -x tests -ll
 python -m pip_audit -r requirements.txt
 ```
-
-Bandit check `B324` is skipped because the current SHA1 use is a non-security cache key. Keep the skip visible and remove it when the cache key is migrated to SHA256.
 
 The GitHub Actions workflow runs the same syntax, test, static security, and dependency-audit checks on pull requests and pushes to `main`.
 
