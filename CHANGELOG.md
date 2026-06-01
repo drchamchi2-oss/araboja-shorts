@@ -19,3 +19,4 @@ All notable changes to this project are documented here.
 
 - Added repository guidance to avoid committing API keys, `.env`, generated credentials, private logs, or local media assets.
 - Added CI-enforced static security scanning and dependency vulnerability auditing.
+- Replaced SHA1 image cache keys with SHA256 and removed the Bandit B324 skip.
