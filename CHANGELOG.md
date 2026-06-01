@@ -11,6 +11,7 @@ All notable changes to this project are documented here.
 - Environment example and dependency list.
 - GitHub Actions CI with syntax checks, tests, Bandit static security scanning, and pip-audit dependency auditing.
 - Release checklist and media/licensing guidance.
+- Local doctor script for runtime prerequisite checks.
 - Helper-function tests for path, JSON, and caption behavior.
 
 ### Security
