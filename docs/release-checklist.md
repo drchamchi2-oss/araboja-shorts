@@ -1,0 +1,33 @@
+# Release Checklist
+
+Use this checklist before tagging a public release.
+
+## Required Checks
+
+Run the same checks used by CI:
+
+```bash
+python -m py_compile main_gpt.py
+python -m pytest
+python -m bandit -r main_gpt.py -x tests -ll
+python -m pip_audit -r requirements.txt
+```
+
+## Manual Review
+
+- Confirm `.env`, API keys, generated credentials, private logs, and local media are not committed.
+- Confirm `bgm_no_attrib/mystery.mp3` exists locally if you plan to run the full renderer.
+- Confirm BGM and downloaded media licenses before publishing generated videos.
+- Review generated scripts for factual accuracy and unsupported claims.
+- Confirm `CHANGELOG.md` describes the release.
+
+## Tagging
+
+Recommended first release tag:
+
+```bash
+git tag -a v0.1.0 -m "v0.1.0"
+git push origin v0.1.0
+```
+
+Then create a GitHub release from the tag and include the release notes from `CHANGELOG.md`.
