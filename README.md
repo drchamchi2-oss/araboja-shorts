@@ -47,13 +47,19 @@ Then edit `.env` and add your own keys. Do not commit `.env`.
 python main_gpt.py run --verbose
 ```
 
+To check topic and script generation without rendering video, audio, or images:
+
+```bash
+python main_gpt.py run --dry_run --verbose
+```
+
 If ffmpeg is not on `PATH`:
 
 ```bash
 python main_gpt.py run --ffmpeg_path C:\ffmpeg\bin\ffmpeg.exe --verbose
 ```
 
-Generated files are written under `out_araboza/`.
+Generated files are written under `out_araboza/`. Full runs write `final.mp4`, `script.json`, `media_attribution.json`, and selected source images. Dry runs write `script.json` and `media_attribution.json`.
 
 ## Development Checks
 
