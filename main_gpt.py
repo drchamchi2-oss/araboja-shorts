@@ -904,12 +904,16 @@ def make_placeholder_image(out_path: Path, text_msg: str) -> None:
     img.save(out_path, quality=92)
 
 
+def cache_key_for_url(url: str) -> str:
+    return hashlib.sha256(url.encode("utf-8")).hexdigest()[:16]
+
+
 def download_image(url: str, out_path: Path) -> bool:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     if out_path.exists() and out_path.stat().st_size > 0:
         return True
     try:
-        key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
+        key = cache_key_for_url(url)
     except Exception:
         key = None
     cache_dir = out_path.parent.parent / "_cache"
