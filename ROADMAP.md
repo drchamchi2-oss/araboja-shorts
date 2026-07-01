@@ -19,11 +19,13 @@ This roadmap tracks near-term work that keeps `araboja-shorts` useful, testable,
 
 ## Near-Term Issues
 
-No open roadmap issues remain.
+- [#44](https://github.com/drchamchi2-oss/araboja-shorts/issues/44): Publish araboja-shorts to PyPI.
+- [#45](https://github.com/drchamchi2-oss/araboja-shorts/issues/45): Add a demo video/GIF to the README.
+- [#46](https://github.com/drchamchi2-oss/araboja-shorts/issues/46): Expand pure-helper test coverage for rendering timing.
 
 ## Release Readiness
 
-The first release target is `v0.1.0`. Before tagging, run the checks in [`docs/release-checklist.md`](docs/release-checklist.md), confirm generated media is not committed, and review media/BGM licensing requirements.
+Current release: `v0.2.0` (renamed project, pip packaging, CLI entry point). Before tagging a release, run the checks in [`docs/release-checklist.md`](docs/release-checklist.md), confirm generated media is not committed, and review media/BGM licensing requirements.
 
 ## Non-Goals
 

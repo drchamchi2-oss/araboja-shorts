@@ -3,12 +3,23 @@
 [![Python CI](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/python-ci.yml/badge.svg)](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/python-ci.yml)
 [![CodeQL](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/codeql.yml/badge.svg)](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/codeql.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release downloads](https://img.shields.io/github/downloads/drchamchi2-oss/araboja-shorts/total)](https://github.com/drchamchi2-oss/araboja-shorts/releases)
 
 `araboja-shorts` is a Python pipeline for generating Korean short-form videos about ancient artifacts, archaeological sites, and ancient-civilization mysteries — from topic selection to a finished, subtitled 1080x1920 video.
 
 > Formerly published as `shorts_test`. Renamed after the original araboja shorts project it grew out of; old links redirect here.
 
 The script builds a roughly 60-second vertical video by selecting a topic from public web sources, drafting a Korean narration with OpenAI, collecting public-source imagery, generating TTS audio, rendering scenes with ffmpeg, burning subtitles, and cleaning intermediate files.
+
+```mermaid
+flowchart LR
+    A[Topic selection<br/>Wikipedia / trends] --> B[Korean script<br/>OpenAI]
+    B --> C[Images<br/>Wikimedia Commons]
+    B --> D[TTS narration<br/>OpenAI]
+    C --> E[ffmpeg render<br/>1080x1920 + subtitles + BGM]
+    D --> E
+    E --> F[final.mp4<br/>+ attribution metadata]
+```
 
 ## What It Does
 
@@ -28,6 +39,12 @@ The script builds a roughly 60-second vertical video by selecting a topic from p
 - Optional API keys for Pexels and Pixabay image fallback
 
 Install as a package (provides the `araboja-shorts` command):
+
+```bash
+python -m pip install git+https://github.com/drchamchi2-oss/araboja-shorts
+```
+
+Or from a local checkout:
 
 ```bash
 python -m pip install .
