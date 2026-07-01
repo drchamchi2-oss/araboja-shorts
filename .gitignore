@@ -27,3 +27,8 @@ bgm_no_attrib/*.wav
 Thumbs.db
 .vscode/
 .idea/
+
+# Build artifacts
+araboja_shorts.egg-info/
+dist/
+build/
