@@ -1,0 +1,3 @@
+main_gpt
+shorts_media
+shorts_rendering

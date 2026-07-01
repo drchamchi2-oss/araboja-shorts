@@ -15,7 +15,7 @@ Please do not open a public issue for suspected security vulnerabilities.
 Use GitHub's private vulnerability reporting or open a private advisory if available for this repository:
 
 ```text
-https://github.com/drchamchi2-oss/shorts_test/security/advisories/new
+https://github.com/drchamchi2-oss/araboja-shorts/security/advisories/new
 ```
 
 A useful report includes:

@@ -1,4 +1,4 @@
-"""Local environment checks for shorts_test."""
+"""Local environment checks for araboja-shorts."""
 from __future__ import annotations
 
 import argparse
@@ -76,7 +76,7 @@ def render_text(checks: Iterable[CheckResult]) -> str:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Check local shorts_test runtime prerequisites.")
+    parser = argparse.ArgumentParser(description="Check local araboja-shorts runtime prerequisites.")
     parser.add_argument("--ffmpeg-path", default=None, help="Explicit ffmpeg executable path.")
     parser.add_argument("--json", action="store_true", help="Print machine-readable JSON output.")
     return parser

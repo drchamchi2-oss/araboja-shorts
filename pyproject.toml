@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "araboja-shorts"
+version = "0.2.0"
+description = "Automated Korean short-form history videos: topic selection, Korean narration, TTS, and 1080x1920 ffmpeg rendering."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Kim hyosung", email = "drchamchi2@gmail.com" }]
+requires-python = ">=3.10"
+keywords = ["shorts", "video", "tts", "ffmpeg", "korean", "youtube", "automation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = [
+    "openai>=1.0.0",
+    "Pillow>=12.2.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/drchamchi2-oss/araboja-shorts"
+Issues = "https://github.com/drchamchi2-oss/araboja-shorts/issues"
+Changelog = "https://github.com/drchamchi2-oss/araboja-shorts/blob/main/CHANGELOG.md"
+
+[project.scripts]
+araboja-shorts = "main_gpt:main"
+
+[tool.setuptools]
+py-modules = ["main_gpt", "shorts_media", "shorts_rendering"]

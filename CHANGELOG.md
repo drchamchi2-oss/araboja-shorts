@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here.
 
+## v0.2.0 - 2026-07-02
+
+### Changed
+
+- Renamed the project from `shorts_test` to `araboja-shorts`, after the original araboja shorts project it grew out of. Old GitHub URLs redirect.
+
+### Added
+
+- `pyproject.toml` packaging: the project is now pip-installable and exposes an `araboja-shorts` CLI entry point.
+- Project metadata (license badge, keywords, project URLs) for discoverability.
+
 ## v0.1.0 - 2026-06-01
 
 ### Added

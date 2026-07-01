@@ -1,0 +1,2 @@
+[console_scripts]
+araboja-shorts = main_gpt:main

@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for considering a contribution to `shorts_test`.
+Thanks for considering a contribution to `araboja-shorts`.
 
 This project is intentionally small and maintainer-friendly. Keep changes focused, explain why they are needed, and avoid broad rewrites unless an issue clearly calls for them.
 
