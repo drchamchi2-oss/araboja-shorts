@@ -3,6 +3,7 @@
 [![Python CI](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/python-ci.yml/badge.svg)](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/python-ci.yml)
 [![CodeQL](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/codeql.yml/badge.svg)](https://github.com/drchamchi2-oss/araboja-shorts/actions/workflows/codeql.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/araboja-shorts)](https://pypi.org/project/araboja-shorts/)
 [![Release downloads](https://img.shields.io/github/downloads/drchamchi2-oss/araboja-shorts/total)](https://github.com/drchamchi2-oss/araboja-shorts/releases)
 
 `araboja-shorts` is a Python pipeline for generating Korean short-form videos about ancient artifacts, archaeological sites, and ancient-civilization mysteries — from topic selection to a finished, subtitled 1080x1920 video.
@@ -44,16 +45,16 @@ A sample araboja shorts video, in the format this pipeline produces:
 - A local BGM file at `bgm_no_attrib/mystery.mp3`
 - Optional API keys for Pexels and Pixabay image fallback
 
-Install as a package (provides the `araboja-shorts` command):
+Install from PyPI (provides the `araboja-shorts` command):
+
+```bash
+python -m pip install araboja-shorts
+```
+
+Or install the latest development version:
 
 ```bash
 python -m pip install git+https://github.com/drchamchi2-oss/araboja-shorts
-```
-
-Or from a local checkout:
-
-```bash
-python -m pip install .
 ```
 
 Or install only the runtime dependencies:
