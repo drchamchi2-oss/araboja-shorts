@@ -21,6 +21,12 @@ flowchart LR
     E --> F[final.mp4<br/>+ attribution metadata]
 ```
 
+## Demo
+
+A sample araboja shorts video, in the format this pipeline produces:
+
+[![Sample araboja shorts video](https://img.youtube.com/vi/irgscHEXidA/maxresdefault.jpg)](https://youtube.com/shorts/irgscHEXidA)
+
 ## What It Does
 
 - Selects archaeology and ancient-mystery topics from Wikipedia and trend sources.
